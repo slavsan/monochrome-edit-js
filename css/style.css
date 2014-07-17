@@ -1,0 +1,55 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+}
+#wrap {
+  padding: 10px;
+  font-family: "helvetica neue", "ubuntu", sans-serif;
+}
+#panel {
+  background: #ddd;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+#panel input,
+#panel button,
+#panel label {
+  vertical-align: middle;
+}
+#main {
+  padding: 20px 0;
+}
+#main table {
+  border-collapse: collapse;
+}
+#main table th {
+  min-width: 100px;
+  font-size: 13px;
+}
+#main table td {
+  border-top: 1px solid #eee;
+  text-align: center;
+  padding: 8px 5px;
+  font-size: 13px;
+  position: relative;
+}
+#main table td canvas {
+  position: relative;
+  z-index: 1;
+}
+#main table td a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+#main table td.info {
+  text-align: left;
+}
+#canvas {
+  border: 1px solid #eee;
+  background: #fff;
+}
