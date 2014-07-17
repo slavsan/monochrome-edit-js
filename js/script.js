@@ -10,14 +10,14 @@
   "use strict";
 
   var doc = global.document;
-  var canvas, ctx, img,
+  var img,
     contexts = [],
-    main = doc.querySelector('#main'),
+    main = doc.querySelector('#monochrome-edit-main'),
     table = main.querySelector('table');
 
-  function decimalToHex( dec ) {
-    return dec.toString(16);
-  }
+  //function decimalToHex( dec ) {
+  //  return dec.toString(16);
+  //}
 
   function hexToDecimal( hex ) {
     return parseInt(hex, 16);
@@ -46,17 +46,17 @@
     return rgb;
   }
 
-  function rgbToHex( red, green, blue ) {
-    var r = decimalToHex(red);
-    var g = decimalToHex(green);
-    var b = decimalToHex(blue);
-
-    if (r === '0') r = '00';
-    if (g === '0') g = '00';
-    if (b === '0') b = '00';
-
-    return '#' + r + g + b;
-  }
+  //function rgbToHex( red, green, blue ) {
+  //  var r = decimalToHex(red);
+  //  var g = decimalToHex(green);
+  //  var b = decimalToHex(blue);
+  //
+  //  if (r === '0') r = '00';
+  //  if (g === '0') g = '00';
+  //  if (b === '0') b = '00';
+  //
+  //  return '#' + r + g + b;
+  //}
 
   function changeImageColor( ctx, rgbArray ) {
     var imgData = ctx.getImageData(0, 0, ctx.canvas.width, ctx.canvas.height);
