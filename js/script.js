@@ -1,7 +1,7 @@
 /**
  * A JavaScript tool for quickly changing the color in monochrome images
  * http://slavchoslavchev.com
- * https://github.com/slavsan
+ * https://github.com/slavsan/monochrome-edit-js
  *
  * Copyright 2014, Slavcho Slavchev
  * Dual licensed under the MIT or GPL Version 2 licenses.
